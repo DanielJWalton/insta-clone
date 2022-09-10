@@ -20,12 +20,12 @@ function Header() {
 
 	return (
 		<header className='shadow-sm border-b bg-white sticky top-0 z-50'>
-			<div className='flex justify-between p-2 max-w-6xl mx-5 xl:mx-auto'>
+			<div className='flex justify-between p-2 w-full sm:w-3/4 md:max-w-4xl mx-auto '>
 				<div
-					className='hidden relative w-24 lg:inline-grid cursor-pointer'
+					className='hidden relative w-60 lg:inline-grid cursor-pointer'
 					onClick={() => router.push('/')}>
 					<Image
-						src='https://links.papareact.com/ocw'
+						src='/igtext.svg'
 						alt='Picture of the author'
 						layout='fill'
 						objectFit='contain'
@@ -36,7 +36,7 @@ function Header() {
 					className='relative w-6 md:w-8 flex-shrink-0 lg:hidden cursor-pointer'
 					onClick={() => router.push('/')}>
 					<Image
-						src='https://links.papareact.com/jjm'
+						src='/igicon.svg'
 						alt='Picture of the author'
 						layout='fill'
 						objectFit='contain'
@@ -90,7 +90,9 @@ function Header() {
 							/>
 						</>
 					) : (
-						<button onClick={signIn}>Sign In</button>
+						<button className='flex flex-row w-14' onClick={signIn}>
+							Sign In
+						</button>
 					)}
 				</div>
 			</div>
