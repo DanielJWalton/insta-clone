@@ -53,7 +53,7 @@ function Header() {
 						</div>
 						<input
 							type='text'
-							className='bg-gray-200 items-center mx-auto w-full block pl-10 sm:text-sm border-none rounded-md'
+							className='bg-gray-200 items-center mx-auto focus:ring-gray-200 w-full focus:border-black block pl-10 sm:text-sm border-none rounded-md'
 							placeholder='Search'
 						/>
 					</div>
