@@ -20,9 +20,9 @@ function Header() {
 
 	return (
 		<header className='shadow-sm border-b bg-white sticky top-0 z-50'>
-			<div className='flex justify-between p-2 w-full sm:w-3/4 md:max-w-4xl mx-auto '>
+			<div className='flex justify-between p-2 w-full text-center md:max-w-4xl mx-auto '>
 				<div
-					className='hidden relative w-60 lg:inline-grid cursor-pointer'
+					className='hidden relative w-40 mr-4 md:inline-grid cursor-pointer'
 					onClick={() => router.push('/')}>
 					<Image
 						src='/igtext.svg'
@@ -33,7 +33,7 @@ function Header() {
 				</div>
 
 				<div
-					className='relative w-6 md:w-8 flex-shrink-0 lg:hidden cursor-pointer'
+					className='relative w-6  flex-shrink-0 md:hidden cursor-pointer'
 					onClick={() => router.push('/')}>
 					<Image
 						src='/igicon.svg'
@@ -44,16 +44,16 @@ function Header() {
 				</div>
 
 				<div className='w-screen'>
-					<div className='mt-1 p-3 relative rounded-md'>
+					<div className='mt-1 relative w-1/2 mx-auto rounded-md '>
 						<div className='absolute inset-y-0 pl-3 flex items-center pointer-events-none'>
 							<SearchIcon
-								className='h-3 w-3 text-gray-400'
+								className='h-5 w-5 text-gray-400'
 								aria-hidden='true'
 							/>
 						</div>
 						<input
 							type='text'
-							className='bg-gray-50 focus:ring-black w-full focus:border-black block pl-10 sm:text-sm border-gray-300 rounded-md'
+							className='bg-gray-200 items-center mx-auto w-full block pl-10 sm:text-sm border-none rounded-md'
 							placeholder='Search'
 						/>
 					</div>
