@@ -43,7 +43,7 @@ function Header() {
 					/>
 				</div>
 
-				<div className='w-screen'>
+				<div className='w-screen hidden md:inline'>
 					<div className='mt-1 relative w-1/2 mx-auto rounded-md '>
 						<div className='absolute inset-y-0 pl-3 flex items-center pointer-events-none'>
 							<SearchIcon
@@ -80,7 +80,7 @@ function Header() {
 								onClick={() => setOpen(true)}
 							/>
 
-							<UserGroupIcon className='navBtn h-5 md:h-8' />
+							<UserGroupIcon className='navBtn h-7 md:h-8' />
 							<HeartIcon className='navBtn h-5 md:h-8' />
 							<img
 								onClick={signOut}
