@@ -22,7 +22,7 @@ function Header() {
 		<header className='shadow-sm border-b bg-white sticky top-0 z-50'>
 			<div className='flex justify-between p-2 w-full text-center md:max-w-4xl mx-auto '>
 				<div
-					className='hidden relative w-40 mr-4 md:inline-grid cursor-pointer'
+					className='relative w-40 mr-4 md:inline-grid cursor-pointer'
 					onClick={() => router.push('/')}>
 					<Image
 						src='/igtext.svg'
@@ -32,7 +32,7 @@ function Header() {
 					/>
 				</div>
 
-				<div
+				{/* <div
 					className='relative w-6  flex-shrink-0 md:hidden cursor-pointer'
 					onClick={() => router.push('/')}>
 					<Image
@@ -41,7 +41,7 @@ function Header() {
 						layout='fill'
 						objectFit='contain'
 					/>
-				</div>
+				</div> */}
 
 				<div className='w-screen hidden md:inline'>
 					<div className='mt-1 relative w-1/2 mx-auto rounded-md '>
