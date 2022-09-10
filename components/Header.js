@@ -60,14 +60,17 @@ function Header() {
 				</div>
 
 				<div className='flex items-center justify-end space-x-4'>
-					<HomeIcon className='navBtn' onClick={() => router.push('/')} />
+					<HomeIcon
+						className='navBtn h-7 md:h-8'
+						onClick={() => router.push('/')}
+					/>
 
 					{/* <MenuIcon className='h-6 md:h-8 md:hidden cursor-pointer' /> */}
 
 					{session ? (
 						<>
 							<div className='relative navBtn'>
-								<PaperAirplaneIcon className='navBtn h-7 md:h-8' />
+								<PaperAirplaneIcon className='navBtn ' />
 								<div className='absolute -top-2 -right-1 text-xs w-5 h-5 bg-red-500 rounded-full flex items-center justify-center text-white animate-pulse'>
 									3
 								</div>

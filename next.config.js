@@ -6,6 +6,7 @@ module.exports = {
 			'avatars.dicebear.com',
 			'lh3.googleusercontent.com',
 			'firebasestorage.googleapis.com',
+			'pbs.twimg.com',
 		],
 	},
 };
