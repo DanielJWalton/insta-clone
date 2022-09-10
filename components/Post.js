@@ -24,6 +24,7 @@ import Image from 'next/image';
 import {useEffect, useRef, useState} from 'react';
 import Moment from 'react-moment';
 import {db} from '../firebase';
+import {Jelly} from '@uiball/loaders';
 
 function Post({id, username, userImg, img, caption}) {
 	const [comment, setComment] = useState('');
@@ -31,7 +32,7 @@ function Post({id, username, userImg, img, caption}) {
 	const [likes, setLikes] = useState([]);
 	const [hasLiked, setHasLiked] = useState(false);
 
-	const {data: session} = useSession();
+	const {data: session, loading} = useSession();
 
 	useEffect(
 		() =>

@@ -20,7 +20,7 @@ function Header() {
 
 	return (
 		<header className='shadow-sm border-b bg-white sticky top-0 z-50'>
-			<div className='flex justify-between p-2 w-full text-center md:max-w-4xl mx-auto '>
+			<div className='flex pl-5 justify-between p-2 w-full text-center md:max-w-4xl mx-auto '>
 				<div
 					className='relative w-40 mr-4 md:inline-grid cursor-pointer'
 					onClick={() => router.push('/')}>
@@ -31,17 +31,6 @@ function Header() {
 						objectFit='contain'
 					/>
 				</div>
-
-				{/* <div
-					className='relative w-6  flex-shrink-0 md:hidden cursor-pointer'
-					onClick={() => router.push('/')}>
-					<Image
-						src='/igicon.svg'
-						alt='Picture of the author'
-						layout='fill'
-						objectFit='contain'
-					/>
-				</div> */}
 
 				<div className='w-screen hidden md:inline'>
 					<div className='mt-1 relative w-1/2 mx-auto rounded-md '>
@@ -64,8 +53,6 @@ function Header() {
 						className='navBtn h-7 md:h-8'
 						onClick={() => router.push('/')}
 					/>
-
-					{/* <MenuIcon className='h-6 md:h-8 md:hidden cursor-pointer' /> */}
 
 					{session ? (
 						<>
