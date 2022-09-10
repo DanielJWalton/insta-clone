@@ -1,5 +1,3 @@
-import Avatar from './Avatar.tsx';
-
 type Props = {
 	large?: boolean;
 	img?: string;
