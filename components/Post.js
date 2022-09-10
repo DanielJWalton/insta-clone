@@ -82,7 +82,7 @@ function Post({id, username, userImg, img, caption}) {
 	};
 
 	return (
-		<div className='bg-white my-3 md:my-7 border rounded-lg'>
+		<div className=' md:max-w-2xl relative bg-white my-3 md:my-7 border rounded-lg'>
 			{/* Header */}
 			<div className='flex items-center p-5'>
 				<Image
@@ -96,14 +96,16 @@ function Post({id, username, userImg, img, caption}) {
 				<DotsHorizontalIcon className='h-5' />
 			</div>
 
-			<Image
-				layout='responsive'
-				width={300}
-				height={300}
-				src={img}
-				className='object-cover w-full'
-				alt=''
-			/>
+			<div className='p-1 w-screen md:w-full'>
+				<Image
+					width='100%'
+					height='100%'
+					src={img}
+					alt=''
+					layout='responsive'
+					objectFit='contain'
+				/>
+			</div>
 
 			{session && (
 				/* buttons */

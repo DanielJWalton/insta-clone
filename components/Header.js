@@ -60,10 +60,7 @@ function Header() {
 				</div>
 
 				<div className='flex items-center justify-end space-x-4'>
-					<HomeIcon
-						className='h-5 md:h-8 navBtn'
-						onClick={() => router.push('/')}
-					/>
+					<HomeIcon className='navBtn' onClick={() => router.push('/')} />
 
 					{/* <MenuIcon className='h-6 md:h-8 md:hidden cursor-pointer' /> */}
 
@@ -76,15 +73,15 @@ function Header() {
 								</div>
 							</div>
 							<PlusCircleIcon
-								className='h-7 md:h-8 cursor-pointer'
+								className='h-7 cursor-pointer'
 								onClick={() => setOpen(true)}
 							/>
 
-							<UserGroupIcon className='navBtn h-7 md:h-8' />
-							<HeartIcon className='navBtn h-5 md:h-8' />
+							<UserGroupIcon className='navBtn' />
+							<HeartIcon className='navBtn' />
 							<img
 								onClick={signOut}
-								className='cursor-pointer rounded-full h-5 md:h-8'
+								className='cursor-pointer rounded-full h-7 md:h-8'
 								src={session.user.image}
 								alt=''
 							/>
