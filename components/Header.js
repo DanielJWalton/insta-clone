@@ -65,7 +65,7 @@ function Header() {
 						onClick={() => router.push('/')}
 					/>
 
-					<MenuIcon className='h-6 md:h-8 md:hidden cursor-pointer' />
+					{/* <MenuIcon className='h-6 md:h-8 md:hidden cursor-pointer' /> */}
 
 					{session ? (
 						<>

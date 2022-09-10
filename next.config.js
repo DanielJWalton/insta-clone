@@ -4,6 +4,8 @@ module.exports = {
 			'links.papareact.com',
 			'cdn.fakercloud.com/avatars/',
 			'avatars.dicebear.com',
+			'lh3.googleusercontent.com',
+			'firebasestorage.googleapis.com',
 		],
 	},
 };

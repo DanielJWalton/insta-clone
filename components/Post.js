@@ -20,6 +20,7 @@ import {
 } from '@heroicons/react/outline';
 import {HeartIcon as HeartIconFilled} from '@heroicons/react/solid';
 import {useSession} from 'next-auth/react';
+import Image from 'next/image';
 import {useEffect, useRef, useState} from 'react';
 import Moment from 'react-moment';
 import {db} from '../firebase';
@@ -84,16 +85,25 @@ function Post({id, username, userImg, img, caption}) {
 		<div className='bg-white my-3 md:my-7 border rounded-lg'>
 			{/* Header */}
 			<div className='flex items-center p-5'>
-				<img
+				<Image
+					height={36}
+					width={36}
 					src={userImg}
 					className='rounded-full h-12 w-12 object-contain border p-1 mr-3'
 					alt=''
 				/>
-				<p className='flex-1 font-bold'>{username}</p>
+				<p className='flex-1 pl-5 font-bold'>{username}</p>
 				<DotsHorizontalIcon className='h-5' />
 			</div>
 
-			<img src={img} className='object-cover w-full' alt='' />
+			<Image
+				layout='responsive'
+				width={300}
+				height={300}
+				src={img}
+				className='object-cover w-full'
+				alt=''
+			/>
 
 			{session && (
 				/* buttons */
