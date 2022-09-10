@@ -6,7 +6,7 @@ type Props = {
 	img?: string;
 	username?: string;
 };
-let seed = 1;
+let seed = 20;
 function Suggestions(img, username) {
 	const [suggestions, setSuggestions] = useState([]);
 
